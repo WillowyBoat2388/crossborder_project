@@ -1,0 +1,6 @@
+rsa_key.p8
+rsa_key.pub
+.env
+target/
+dbt_packages/
+logs/
