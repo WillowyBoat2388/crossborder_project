@@ -9,7 +9,7 @@ right join inventory invtry on film.film_id = invtry.film_id
 right join rental rntl on invtry.inventory_id = rntl.inventory_id
 join payment pymnt on rntl.rental_id = pymnt.rental_id
 group by ctgry.category_id, ctgry.name, years
-order by in_demand desc, total_sales desc
+order by demand desc, total_sales desc
 limit 3
 )
 
